@@ -1,797 +1,245 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-========================================================================== */
-
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
- html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
-
- body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-
- main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
- h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
- hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
- pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-========================================================================== */
-
-/**
- * Remove the gray background on active links in IE 10.
- */
-
- a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
- abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
- b,
- strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
- code,
- kbd,
- samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-
- small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
- sub,
- sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-========================================================================== */
-
-/**
- * Remove the border on images inside links in IE 10.
- */
-
- img {
-  border-style: none;
-}
-
-/* Forms
-========================================================================== */
-
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
- button,
- input,
- optgroup,
- select,
- textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
- button,
- input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
- button,
- select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
- button,
- [type="button"],
- [type="reset"],
- [type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-
- button::-moz-focus-inner,
- [type="button"]::-moz-focus-inner,
- [type="reset"]::-moz-focus-inner,
- [type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-
- button:-moz-focusring,
- [type="button"]:-moz-focusring,
- [type="reset"]:-moz-focusring,
- [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-
- fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
- legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
- progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
- textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
- [type="checkbox"],
- [type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
- [type="number"]::-webkit-inner-spin-button,
- [type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
- [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
- [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
- ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
- details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
- summary {
-  display: list-item;
-}
-
-/* Misc
-========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
- template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-
- [hidden] {
-  display: none;
-}
-
-/* Out Styles */
-body {
-  margin: 0;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: Montserrat, Regular;
-  color: #9698A4;
-}
-
-.outer-wrap {
-  max-width: 1050px;
-  margin: 0 auto;
-}
-
-.clr-blue {
-  color: #1A73E8;
-}
-
-.clr-orange {
-  color: #FF7832;
-}
-
-a:hover {
-  color: #FF7832;
-}
-
-/* Header */
-.outer-wrap header {
-  display: flex;
-  justify-content: space-around;
-}
-
-.hidden-tbl {
-  visibility: hidden;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  /* width: 100%; */
-  /* justify-content: space-around; */
-}
-
-header li a {
-  color: #2A314B;
-  text-decoration: none;
-  display: block;
-  padding: 16px 20px 15px;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-a {
-  text-decoration: none;
-}
-
-img.head-logo {
-  margin-top: 31.13px;
-  margin-bottom: 11px;
-  /* padding: 5px; */
-  width: 83.47px;
-  height: 35.85px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.list1
-{
-  background-image: url('img/search.svg');
-  background-repeat: no-repeat;
-  padding-left: 30px;  /* width of the image plus a little extra padding */
-  display: block;  /* may not need this, but I've found I do */
-}
-/* .Header */
-
-/* Section Search */
-section#search {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#search p:first-child {
-  margin-top: 184px;
-  line-height: 27px;
-  color: #293553;
-  margin-bottom: 59px;
-  font-size: 22px;
-  font-weight: 500;
-}
-
-form span {
-  border: 1px solid #CCCCCC;
-  position: relative;
-  top: 1.5px;
-  left: 4px;
-  width: 67px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #555555;
-  padding: 11px 19px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-button[type="submit"] {
-  height: 46px;
-  position: relative;
-  top: 16.5px;
-  left: -4px;
-  width: 71px;
-  background-color: #0B7BFF;
-  background-image: url("../img/search-inner.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 0;
-  border-radius: 0 5px 5px 0;
-  outline: none;
-}
-
-input[type="search"] {
-  margin-bottom: 85.53px;
-  width: 808px;
-  height: 46px;
-  z-index: 11;
-}
-
-p.error {
-  font-size: 18px;
-  line-height: 22px;
-  color: #FF5A60;
-  margin-bottom: 22px;
-  font-weight: 500;
-}
-
-p.gray {
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 119.47px;
-  font-weight: 300;
-}
-
-p {
-  margin: 0;
-}
-
-table, th, td {
-  border: 1px solid #E8E8E8;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-
-section#table {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-td.has {
-  background-image: url('../img/accepted.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-td.hasnt {
-  background-image: url('../img/lock.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.bld, .blue-btn {
-  font-size: 14px;
-}
-
-table.table {
-  margin-bottom: 60.53px;
-  text-align: center;
-}
-
-.bld {
-  color: #25282D;
-  font-weight: 500;
-}
-
-th {
-  padding: 18px 52px 17px 52px;
-}
-
-td.bld {
-  text-align: left;
-}
-
-td {
-  padding: 17px 21px;
-}
-
-.left-aligned {
-  text-align: left;
-}
-
-.gray-bg {
-  background-color: #F7F8F9;
-}
-
-p.more {
-  margin-bottom: 104.47px;
-}
-/* .Section Search */
-
-/* Section AboutUS */
-section#aboutus {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 956px;
-  margin: 0 auto;
-}
-
-.fa-long-arrow-alt-right:before {
-  color: #0B7BFF;
-  /* font-weight: 400; */
-  position: absolute;
-  bottom: 4px;
-  left: 113px;
-}
-
-.fa-long-arrow-alt-right:hover:before {
-  color: #FF7832;
-}
-
-.single {
-  margin-bottom: 34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 455px;
-  height: 173px;
-  border: 1px solid #E8E8E8;
-  position: relative;
-}
-
-.single:nth-last-child(2):nth-child(odd) {
-  color: #fff;
-}
-
-.single-text {
-  /* margin-left: 69.63px; */
-  /* margin-right: 67px; */
-  position: relative;
-}
-
-.single-img {
-  /* margin-left: 18px; */
-}
-
-.single:nth-child(odd) {
-  margin-right: 35px;
-}
-
-.single:last-child {
-  margin-bottom: 69px;
-}
-
-.single-text h3 {
-  color: #25282D;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
-  margin-bottom: 7px;
-}
-
-.single-text h4 {
-  color: #737573;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  margin: 0;
-  margin-bottom: 11px;
-}
-
-.single-text a {
-  line-height: 25px;
-  color: #0B7BFF;
-  font-weight: 300;
-  margin: 0;
-}
-
-.single:nth-child(2) img {
-  margin: 59px 36.72px 47.75px 25px;
-}
-
-.single:nth-child(1) img {
-  margin: 56px 69.63px 43px 18px;
-}
-
-.single:nth-child(3) img {
-  margin: 55px 46.43px 47.73px 25px;
-}
-
-.single:nth-child(4) img {
-  margin: 50px 35.72px 38.93px 25px;
-}
-
-.single:nth-child(5) img {
-  margin: 57px 46px 46px 18px;
-}
-
-.single-text a:after {
-  content: "";
-  width: 15.61px;
-}
-
-/* #Section AboutUS */
-
-/* Section info */
-section#info {
-  border-top: 1px solid #E8E8E8;
-  border-bottom: 1px solid #E8E8E8;
-  margin-bottom: 65px;
-}
-
-#info .outer-wrap {
-  margin-top: 80.88px;
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-
-div#sector-img {
-  width: 142.56px;
-  height: 53.12px;
-  margin-right: 163.64px;
-}
-
-nav.nav-wrapper {
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-nav#nav-1, nav#nav-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-bottom: 53px;
-}
-
-ul[id*="ul"] {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-right: 87px;
-}
-
-li.li-head {
-  color: #2A314B;
-  font-weight: 500;
-  margin-bottom: 17px;
-}
-
-nav#nav-2 {
-  justify-content: flex-end;
-  margin-right: 20px;
-}
-
-ul[id*="ul"]:last-child {
-  margin-right: 61px;
-}
-
-#info li {
-  margin-bottom: 10px;
-}
-
-#info a {
-  color: #9698A4;
-  white-space: nowrap;
-  padding-bottom: 10px;
-}
-
-#info a:hover, #aboutus a:hover {
-  color: #FF7832;
-}
-/* #Section info */
-
-/* Contact-Info */
-.outer-wrap #contact-info {
-  padding-bottom: 65px;
-}
-
-section#contact-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left {
-  display: flex;
-}
-
-.right {
-  display: flex;
-  position: relative;
-}
-
-.right i {
-  color: #2A314B;
-}
-
-.right i:hover {
-  color: #FF7832;
-}
-
-.left p, .right p {
-  margin-right: 37px;
-  position: relative;
-  color: #2A314B;
-}
-
-.left p:last-child {
-  margin: 0;
-}
-
-#contact-info i {
-  left: -19px;
-  bottom: 1px;
-  position: absolute;
-}
-/* #Contact-Info */
-
-
-/* Footer */
-footer {
-  color: #737373;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 23px 0 23px;
-  background-color: #F8F9FA;
-}
-/* Footer */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Tnved XX</title>
+	
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- OUR STYLESHEET -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+</head>
+
+<body>
+	
+		<header>
+			<img class="head-logo" src="img/logo.svg" alt="logo">
+			<nav>
+				<ul>
+					<li><a class="list1" href="#"><i class="fas fa-search"></i>Поиск</a></li>
+					<li><a class="list2" href="#"><i class="fas fa-tree"></i>Дерево ТН ВЭД</a></li>
+					<li><a class="list3" href="#"><i class="fas fa-book"></i>Пояснения</a></li>
+					<li><a class="list4" href="#"><i class="fas fa-info-circle"></i>Справка</a></li>
+					<li><a class="list5" href="#"><i class="fas fa-clock"></i>Перечень изъятий ВТО</a></li>
+				</ul>
+			</nav>
+		</header>
+
+<div class="outer-wrap">
+		<section id="search">
+			<p>Введите ключевые слова или код товара</p>
+			<form action="" method="get">
+				<span class="characters wordcount">150</span>
+				<input class="postText" type="search" name="s" placeholder="">
+				<button type="submit"></button>
+			</form>
+
+			<p class="error">К сожалению, Вы исчерпали лимит, зайдите к нам завтра</p>
+			<p class="gray">или узнайте больше о наших предложениях</p>
+		</section> <!-- #search -->
+		
+		<section id="table">
+			<table class="table">
+				<tr>
+					<th class="hidden-tbl"></th>
+					<th class="bld">Бесплатная</th>
+					<th class="bld">Базовая</th>
+					<th class="bld">Расширенная</th>
+				</tr>
+				<tr>
+					<td class="bld gray-bg" colspan="4">Функции</td>
+				</tr>
+				<tr>
+					<td class="left-aligned">Поиск кодов ТНВЭД</td>
+					<td>25</td>
+					<td>500</td>
+					<td>1000</td>
+				</tr>
+				<tr>
+					<td class="left-aligned">Справка по товару</td>
+					<td>25</td>
+					<td>500</td>
+					<td>1000</td>
+				</tr>
+				<tr>
+					<td class="bld">Перечень изъятий ВТО</td>
+					<td>25</td>
+					<td>500</td>
+					<td>1000</td>
+				</tr>
+
+				<tr>
+					<td class="bld gray-bg" colspan="4">Возможности</td>
+				</tr>
+				<tr>
+					<td class="left-aligned">Веб интерфейс</td>
+					<td class="has"></td>
+					<td class="has"></td>
+					<td class="has"></td>
+				</tr>
+				<tr>
+					<td class="left-aligned">Интеграция в программы</td>
+					<td class="hasnt"></td>
+					<td class="has"></td>
+					<td class="has"></td>
+				</tr>
+				<tr>
+					<td class="left-aligned">API</td>
+					<td class="hasnt"></td>
+					<td class="hasnt"></td>
+					<td class="has"></td>
+				</tr>
+				<tr>
+					<td class="left-aligned">Интеграция в Ваши системы</td>
+					<td class="hasnt"></td>
+					<td class="hasnt"></td>
+					<td class="has"></td>
+				</tr>
+				<tr>
+					<td class="hidden-tbl"></td>
+					<td class="hidden-tbl"></td>
+					<td class="blue-btn"><a class="clr-blue" href="#">Узнать больше</a></td>
+					<td class="blue-btn"><a class="clr-blue" href="#">Отправить запрос</a></td>
+				</tr>
+			</table>
+
+			<p class="more">Подробнее с ценами и пакетами программ можно ознакомиться <a href="#" class="clr-blue">по ссылке</a></p>
+		</section> <!-- #table -->
+
+		<section id="aboutus">
+			<div class="single">
+				<div class="single-img">
+					<img src="img/eac.svg" alt="eac">
+				</div>
+				<div class="single-text">
+					<h3>Cертификационные центры</h3>
+					<h4>Профессиональные услуги по сертификации в Казахстане</h4>
+					<a href="#"><i class="fas fa-long-arrow-alt-right"></i>Узнать больше</a>
+				</div>
+			</div>
+			<div class="single">
+				<div class="single-img">
+					<img src="img/coaching.svg" alt="coaching">
+				</div>
+				<div class="single-text">
+					<h3>Обучение декларированию</h3>
+					<h4>Программа обучения таможенному декларированию</h4>
+					<a href="#"><i class="fas fa-long-arrow-alt-right"></i>Узнать больше</a>
+				</div>
+			</div>
+			<div class="single">
+				<div class="single-img">
+					<img src="img/1c.svg" alt="1c">
+				</div>
+				<div class="single-text">
+					<h3>Оприходование товаров</h3>
+					<h4>Сервис vsklad.kz: автоматическая загрузка данных по ГТД в бухгалтерию</h4>
+					<a href="#"><i class="fas fa-long-arrow-alt-right"></i>Узнать больше</a>
+				</div>
+			</div>
+			<div class="single">
+				<div class="single-img">
+					<img src="img/ts.svg" alt="ts">
+				</div>
+				<div class="single-text">
+					<h3>Самостоятельное декларирование</h3>
+					<h4>Программа D-Sector TS Формирование таможенных деклараций</h4>
+					<a href="#"><i class="fas fa-long-arrow-alt-right"></i>Узнать больше</a>
+				</div>
+			</div>
+			<div class="single">
+				<div class="single-img">
+					<img src="img/excel.svg" alt="excel">
+				</div>
+				<div class="single-text">
+					<h3>Обработка ТН ВЭД в таблицах Excel</h3>
+					<h4>Cкачать программу Sector-ВЭД ТС</h4>
+					<a href="#"><i class="fas fa-long-arrow-alt-right"></i>Узнать больше</a>
+				</div>
+			</div>
+		</section> <!-- #aboutus -->
+
+	</div> <!-- .outer-wrap -->
+
+	<section id="info">
+		<div class="outer-wrap">
+			<div id="sector-img">
+				<img src="img/sector-logo.svg" alt="sector">
+			</div>
+
+			<nav class="nav-wrapper">
+				<nav id="nav-1">
+					<ul id="ul-1">
+						<li class="li-head">ТН ВЭД Инфо</li>
+						<li><a href="#">Скачать</a></li>
+						<li><a href="#">Правила использования</a></li>
+						<li><a href="#">Предварительное решение</a></li>
+					</ul>
+					<ul id="ul-2">
+						<li class="li-head">Продукты</li>
+						<li><a href="#">D-Sector</a></li>
+						<li><a href="#">Sector-ВЭД ТС</a></li>
+					</ul>
+					<ul id="ul-3">
+						<li class="li-head">Сервисы</li>
+						<li><a href="#">Сервис Всклад</a></li>
+						<li><a href="#">Определитель кодов ТНВЭД</a></li>
+						<li><a href="#">Эл. документооборот Сайдокум</a></li>
+					</ul>
+				</nav>
+
+				<nav id="nav-2">
+					<ul id="ul-4">
+						<li class="li-head">Компания</li>
+						<li><a href="#">Учебный курс</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Объявления</a></li>
+					</ul>
+					<ul id="ul-5">
+						<li class="li-head">Ресурсы</li>
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Полезные ссылки</a></li>
+						<li><a href="#">Заявка на тех. обслуживание</a></li>
+					</ul>
+				</nav>
+			</nav> <!-- .nav-wrapper -->
+		</div> <!-- .outer-wrap -->
+	</section> <!-- #info -->
+
+	<div class="outer-wrap">
+		<section id="contact-info">
+			<div class="left">
+				<p>Контактная информация</p>
+				<p class="tel"><i class="fas fa-phone"></i>+7 727 391 00 39</p>
+				<p class="mail"><i class="fas fa-envelope"></i>sector@sector.kz</p>
+			</div>
+			<div class="right">
+				<p><a href="#"><i class="fab fa-telegram-plane"></i></a></p>
+				<p><a href="#"><i class="fab fa-facebook-f"></i></a></p>
+				<p><a href="#"><i class="fab fa-youtube"></i></a></p>
+			</div>
+		</section>
+	</div>
+
+	<footer>
+		© 2018, ТОО “Sector-3”. Все права защищены.
+	</footer>
+
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script> 
+
+	<script src='main.js'></script> 
+
+</body>
+
+</html>
